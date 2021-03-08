@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+    <title>Document</title>
+        
+</head>
+<body>
+    {{>navbar}}
+    <div class="container" style="margin-top: 70px;">
+        <form action="/login" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="Your email name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="password" name="password" placeholder="Enter password">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="submit">Submit</label>
+            </div>
+            <div class="col-75">
+              <!-- <input type="submit" id="confirmpassword" name="submit" placeholder="confirm password"> -->
+              <button type="submit" value="">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

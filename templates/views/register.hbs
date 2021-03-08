@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+    
+</head>
+<body>
+    {{>navbar}}
+
+
+    <div class="container" style="margin-top: 50px;">
+        <form action="/register" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="Your email name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="password" name="password" placeholder="Enter password">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="confirmpassword">Confirm password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="confirmpassword" name="confirmpassword" placeholder="confirm password">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="submit">Submit</label>
+            </div>
+            <div class="col-75">
+              <!-- <input type="submit" id="confirmpassword" name="submit" placeholder="confirm password"> -->
+              <button type="submit" value="Register">submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
